@@ -1,0 +1,1 @@
+zip -r9 "$(date +%d%m%Y_%H%M)".zip * -x .git README.md *placeholder doit
