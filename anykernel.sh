@@ -34,6 +34,7 @@ set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 
 ## AnyKernel install
 dump_boot;
+patch_cmdline sched_enable_hmp sched_enable_hmp=0;
 write_boot;
 
 ## end install
