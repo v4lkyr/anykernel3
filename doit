@@ -1,2 +1,3 @@
 zip -r9 "$(date +%d%m%Y_%H%M)".zip * -x .git README.md *placeholder doit && \
-~/.local/bin/telegram-send --file *.zip
+~/.local/bin/telegram-send --file *.zip && \
+rm Image.gz-dtb && rm *.zip
